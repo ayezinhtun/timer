@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="" id="myLabel">Enter Your Name</label><br>
+    <input type="text" id="myText">
+    <button type="button" id="myButton" onclick="myFunction()">
+        Submit
+    </button>
+
+    <script>
+        let username;
+        function myFunction(){
+            username = document.getElementById("myText").value;
+            console.log(username);
+            document.getElementById("myLabel").innerHTML= username;
+
+        }
+    </script>
+</body>
+</html>
